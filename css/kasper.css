@@ -2,6 +2,7 @@
 :root {
     --Main_Color: #19c8fa;
     --Secondary_Color: rgb(15 116 143 / 80%);
+    --Text_Color: #2c4755;
     --Section_Padding: 100px;
     --Main_Duration: 0.3s;
 }
@@ -270,4 +271,60 @@ header nav .form i {
 }
 
 /* End landing */
+/* ----------------------------------------------------------------------------- */
+/* Start Services */
+.services {
+    padding-top: var(--Section_Padding);
+    padding-bottom: var(--Section_Padding);
+
+}
+
+@media (min-width: 768px) {
+    .services .services_content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-column-gap: 40px;
+        grid-row-gap: 60px;
+    }
+}
+
+.services .srv_box {
+    display: flex;
+    padding: 7px;
+    transition: var(--Main_Duration);
+}
+
+.services .srv_box:hover {
+    box-shadow: 3px 10px 12px 0px #ebebeb;
+}
+
+.services .srv_box i {
+    margin-right: 50px;
+    color: var(--Main_Color);
+    font-size: 38px;
+}
+
+@media (max-width: 767px) {
+    .services .srv_box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .services .srv_box i {
+        margin: 0 0 30px;
+    }
+}
+
+.services .srv_box h3 {
+    margin-bottom: 30px;
+    color: var(--Text_Color);
+}
+
+.services .srv_box p {
+    color: #A8A8A8;
+}
+
+/* End Services */
 /* ----------------------------------------------------------------------------- */

@@ -503,11 +503,6 @@ header nav .form i {
 /* ----------------------------------------------------------------------------- */
 /* Start Sec */
 .cover {
-    /* min-height: 100vh;
-    background-image: url(../imgs/pexels-miguel-á-padriñán-68562.jpg);
-    background-size: cover;
-    position: relative;
-    color: #1f2021; */
     background-image: url(../imgs/landing.jpg);
     background-size: cover;
     height: calc(100vh - 64px);
@@ -554,4 +549,28 @@ header nav .form i {
 }
 
 /* End Sec */
+/* ----------------------------------------------------------------------------- */
+/* Strat About Us */
+.about_us {
+    padding-top: var(--Section_Padding);
+    overflow: hidden;
+    text-align: center;
+}
+
+.about_us img {
+    position: relative;
+    bottom: -120px;
+    margin-top: -120px;
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    .about_us img {
+        bottom: -60px;
+        margin-top: -60px;
+        right: 10px;
+    }
+}
+
+/* End About Us */
 /* ----------------------------------------------------------------------------- */

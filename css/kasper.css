@@ -4,7 +4,7 @@
     --Secondary_Color: rgb(15 116 143 / 80%);
     --Text_Color: #2c4755;
     --Section_Padding: 100px;
-    --Main_Duration: 0.3s;
+    --Main_Duration: 0.5s;
 }
 
 /* End Variables */
@@ -400,7 +400,104 @@ header nav .form i {
 /* End Services Bottom */
 /* ----------------------------------------------------------------------------- */
 /* Start Portfolio */
+.portfolio {
+    padding-top: var(--Section_Padding);
+    padding-bottom: var(--Section_Padding);
+}
 
+.portfolio .list {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .list li {
+    text-transform: uppercase;
+    margin: 0 1.5px;
+    padding: 15px;
+    transition: var(--Main_Duration);
+}
+
+.portfolio .list li.active {
+    background-color: var(--Main_Color);
+    color: white;
+}
+
+.portfolio .list li:hover {
+    background-color: var(--Main_Color);
+    color: white;
+}
+
+.portfolio .img_box_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.portfolio .img_box_container .img_box {
+    /* flex-basis: 25%; */
+    overflow: hidden;
+    position: relative;
+    transition: var(--Main_Duration);
+}
+
+.portfolio .img_box_container .img_box:hover .caption {
+    bottom: 0;
+}
+
+.portfolio .img_box_container .img_box:hover img {
+    transform: scale(1.1, 1.1);
+}
+
+@media (min-width: 768px) {
+    .portfolio .img_box_container .img_box {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 1199px) {
+    .portfolio .img_box_container .img_box {
+        flex-basis: 25%;
+    }
+}
+
+.portfolio .img_box_container .img_box img {
+    max-width: 100%;
+    transition: var(--Main_Duration);
+}
+
+.portfolio .img_box_container .img_box .caption {
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    transition: var(--Main_Duration);
+    bottom: -100%;
+}
+
+.portfolio .img_box_container .img_box .caption h4 {
+    color: #1f2021;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.portfolio .img_box_container .img_box .caption p {
+    color: var(--Main_Color);
+}
+
+.portfolio .more {
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--Main_Color);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-transform: uppercase;
+    border-radius: 3%;
+}
 
 /* End Portfolio */
 /* ----------------------------------------------------------------------------- */

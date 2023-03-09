@@ -574,3 +574,49 @@ header nav .form i {
 
 /* End About Us */
 /* ----------------------------------------------------------------------------- */
+/* Start Footer */
+.footer {
+    padding-top: calc(var(--Section_Padding) / 2);
+    padding-bottom: calc(var(--Section_Padding) / 2);
+    background: #121116;
+    color: white;
+    text-align: center;
+}
+
+.footer .container {
+    position: relative;
+}
+
+.footer p:not(.copyright) {
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    font-size: 22px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social-icons i {
+    padding: 10px 15px;
+    color: white;
+}
+
+.footer .social-icons i:hover {
+    color: var(--Main_Color);
+}
+
+.footer .copyright {
+    margin-top: 55px;
+}
+
+.footer .copyright span {
+    font-weight: bold;
+    color: var(--Main_Color);
+}
+
+/* End Footer */

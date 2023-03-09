@@ -276,7 +276,6 @@ header nav .form i {
 .services {
     padding-top: var(--Section_Padding);
     padding-bottom: var(--Section_Padding);
-
 }
 
 @media (min-width: 768px) {
@@ -327,4 +326,76 @@ header nav .form i {
 }
 
 /* End Services */
+/* ----------------------------------------------------------------------------- */
+/* Start Services Bottom */
+.services_bottom {
+    padding-top: var(--Section_Padding);
+    padding-bottom: var(--Section_Padding);
+    background-image: url(../imgs/design-features.jpg);
+    height: 550px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.services_bottom::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 35%);
+}
+
+.services_bottom .image,
+.services_bottom .text {
+    position: relative;
+    /* z-index: 2; */
+    flex: 1;
+}
+
+.services_bottom .image {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .services_bottom .image {
+        display: none;
+    }
+}
+
+.services_bottom .image img {
+    position: relative;
+    bottom: -125px;
+}
+
+.services_bottom .text {
+    color: white;
+    padding: 35px;
+    background-color: var(--Secondary_Color);
+}
+
+.services_bottom .text h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.services_bottom .text ul li {
+    padding: 15px 0px;
+}
+
+.services_bottom .text ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+}
+
+/* End Services Bottom */
 /* ----------------------------------------------------------------------------- */

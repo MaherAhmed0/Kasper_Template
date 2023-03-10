@@ -736,6 +736,51 @@ header nav .form i {
     border-color: var(--Main_Color);
 }
 
+.testimonials_skills .skills .prog_holder {
+    margin-bottom: 45px;
+}
+
+.testimonials_skills .skills .prog_holder h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.testimonials_skills .skills .prog_holder .prog {
+    background-color: #dedadc;
+    height: 30px;
+    margin-top: 3px;
+}
+
+.testimonials_skills .skills .prog_holder .prog span {
+    display: block;
+    background-color: var(--Main_Color);
+    height: 100%;
+    position: relative;
+}
+
+.testimonials_skills .skills .prog_holder .prog span::before {
+    content: attr(data-progress);
+    position: absolute;
+    background-color: #1f2021;
+    color: white;
+    top: -40px;
+    right: -18px;
+    padding: 4px 0;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.testimonials_skills .skills .prog_holder .prog span::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: #1f2021 transparent transparent;
+    right: -8px;
+    top: -15px;
+}
+
 /* End Testimonials & Skills */
 /* ----------------------------------------------------------------------------- */
 
@@ -785,3 +830,4 @@ header nav .form i {
 }
 
 /* End Footer */
+/* ----------------------------------------------------------------------------- */

@@ -776,13 +776,37 @@ header nav .form i {
     position: absolute;
     border-style: solid;
     border-width: 8px;
-    border-color: #1f2021 transparent transparent;
+    border-color: #1f2023 transparent transparent;
     right: -8px;
     top: -15px;
 }
 
 /* End Testimonials & Skills */
 /* ----------------------------------------------------------------------------- */
+/* Start Quote */
+.quote {
+    padding-top: var(--Section_Padding);
+    padding-bottom: var(--Section_Padding);
+    background-color: #121116;
+    color: white;
+    text-align: center;
+}
+
+.quote .container {
+    position: relative;
+}
+
+.quote q {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* End Quote */
+/* ----------------------------------------------------------------------------- */
+
 
 /* Start Footer */
 .footer {

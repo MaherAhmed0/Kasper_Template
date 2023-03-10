@@ -646,9 +646,99 @@ header nav .form i {
     font-size: 14px;
 }
 
-
 /* End Statistics */
 /* ----------------------------------------------------------------------------- */
+/* Start Testimonials & Skills */
+.testimonials_skills {
+    padding-top: var(--Section_Padding);
+    padding-bottom: var(--Section_Padding);
+}
+
+.testimonials_skills .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+    .testimonials_skills .container>div {
+        flex-basis: 45%;
+    }
+}
+
+.testimonials_skills .container>div>h3 {
+    margin-bottom: 30px;
+    color: #1f2021;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.testimonials_skills .container>div>p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 40px;
+    line-height: 27px;
+}
+
+.testimonials_skills .testimonials .testimonial_box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.testimonials_skills .testimonials .testimonial_box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+@media (max-width: 767px) {
+    .testimonials_skills .testimonials .testimonial_box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials_skills .testimonials .testimonial_box img {
+        margin: 0 auto 20px;
+    }
+}
+
+.testimonials_skills .testimonials .testimonial_box .text {
+    line-height: 1.8;
+    border-bottom: 1px solid #ccc;
+}
+
+.testimonials_skills .testimonials .testimonial_box .text p {
+    color: #777;
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.testimonials_skills .container .bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.testimonials_skills .container .bullets li {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.testimonials_skills .container .bullets li.active {
+    background-color: var(--Main_Color);
+    border-color: var(--Main_Color);
+}
+
+/* End Testimonials & Skills */
+/* ----------------------------------------------------------------------------- */
+
 /* Start Footer */
 .footer {
     padding-top: calc(var(--Section_Padding) / 2);

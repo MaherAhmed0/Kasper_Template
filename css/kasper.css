@@ -806,8 +806,118 @@ header nav .form i {
 
 /* End Quote */
 /* ----------------------------------------------------------------------------- */
+/* Start Pricing */
+.pricing {
+    padding-top: var(--Section_Padding);
+    padding-bottom: var(--Section_Padding);
+}
 
+.pricing .pay_plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
 
+.pricing .pay_plans .plan {
+    background-color: #fcfcfc;
+    text-align: center;
+}
+
+.pricing .pay_plans .plan .head {
+    padding: 40px 20px;
+    border-top: 1px solid var(--Main_Color);
+    border-bottom: 1px solid var(--Main_Color);
+}
+
+.pricing .pay_plans .plan .head h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #1f2021;
+    text-transform: uppercase;
+}
+
+.pricing .pay_plans .plan .head span {
+    font-size: 60px;
+    color: #1f2021;
+    font-weight: bold;
+}
+
+.pricing .pay_plans .plan .head span::before {
+    content: "$";
+    color: #1f2021;
+    font-size: 22px;
+    position: relative;
+    top: -40px;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.pricing .pay_plans .plan .head span::after {
+    content: "/MO";
+    color: #1f2021;
+    font-size: 15px;
+    position: relative;
+    right: -15px;
+}
+
+.pricing .pay_plans .plan ul {
+    border-bottom: 1px solid var(--Main_Color);
+}
+
+.pricing .pay_plans .plan ul li {
+    padding: 20px;
+    color: #1f2021;
+    position: relative;
+}
+
+.pricing .pay_plans .plan ul li:not(:last-child)::after {
+    content: "";
+    width: 140px;
+    height: 1px;
+    background-color: var(--Main_Color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.pricing .pay_plans .plan .foot a {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #1f2021;
+    border: 1px solid var(--Main_Color);
+    width: fit-content;
+    margin: 30px auto;
+    /* box-shadow: 0px 6px 12px 0px #ebebeb; */
+
+}
+
+.pricing .pay_plans .plan .foot a:hover {
+    color: white;
+    background-color: var(--Main_Color);
+    box-shadow: 0px 6px 12px 0px #ebebeb;
+
+}
+
+.pricing .contact_text {
+    text-align: center;
+    margin: 50px auto 20px;
+    font-size: 20px;
+}
+
+.pricing .contact_link {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: var(--Main_Color);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+/* End Pricing */
+/* ----------------------------------------------------------------------------- */
 /* Start Footer */
 .footer {
     padding-top: calc(var(--Section_Padding) / 2);
